@@ -1,8 +1,12 @@
+// import Register from "./Register";
+import SignIn from "./SignIn";
+
 function App() {
   return (
-    <>
-      <div className="text-3xl font-bold underline">Hello</div>
-    </>
+    <main>
+      {/* <Register /> */}
+      <SignIn />
+    </main>
   );
 }
 
