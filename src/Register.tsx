@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{2,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}/;
@@ -225,8 +226,7 @@ const Register = () => {
               Already registered?
               <br />
               <span className="underline">
-                {/* link to signing page */}
-                <a href="#">Sign In</a>
+                <Link to="/signIn">Sign In</Link>
               </span>
             </p>
           </form>

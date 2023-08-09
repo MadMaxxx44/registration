@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   const userRef = useRef<HTMLInputElement | null>(null);
@@ -85,8 +86,7 @@ const SignIn = () => {
             Need an account?
             <br />
             <span className="underline">
-              {/* link to signup page */}
-              <a href="#">Sign Up</a>
+              <Link to="/">Sign Up</Link>
             </span>
           </p>
         </form>
